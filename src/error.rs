@@ -1,11 +1,11 @@
 use thiserror::Error;
 
-use loom_core::error::StoreError;
+use loom_base::error::StoreError;
 
 /// Errors produced internally by [`InfiniteDbStore`](crate::store::InfiniteDbStore).
 ///
 /// All variants implement `Into<StoreError>` so that they can be propagated
-/// through the `loom-core` store traits.
+/// through the `loom-base` store traits.
 #[derive(Debug, Error)]
 pub enum PersistenceError {
     /// An error returned by the `infinite-db` engine.

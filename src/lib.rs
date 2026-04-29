@@ -1,14 +1,14 @@
 //! `plexus-persistence` — durable storage backend for Plexus-Loom.
 //!
 //! Implements the [`AtomStore`], [`BlockStore`], and [`EdgeStore`] traits from
-//! `loom-core` using [`infinite-db`](https://crates.io/crates/infinite-db)
+//! `loom-base` using [`infinite-db`](https://crates.io/crates/infinite-db)
 //! as the on-disk storage engine.
 //!
 //! # Quick-start
 //!
 //! ```rust,no_run
 //! use plexus_persistence::InfiniteDbStore;
-//! use loom_core::store::AtomStore;
+//! use loom_base::store::AtomStore;
 //!
 //! let mut store = InfiniteDbStore::open("./data").unwrap();
 //! // put / get / delete atoms, blocks, edges through the store traits…

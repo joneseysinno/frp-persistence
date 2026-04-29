@@ -4,13 +4,13 @@ use std::path::Path;
 use infinite_db::InfiniteDb;
 use infinite_db::infinitedb_core::address::DimensionVector;
 
-use loom_core::error::StoreError;
-use loom_core::query::{Query, QueryResult};
-use loom_core::store::{AtomStore, BlockStore, EdgeStore};
+use loom_base::error::StoreError;
+use loom_base::query::{Query, QueryResult};
+use loom_base::store::{AtomStore, BlockStore, EdgeStore};
 use loom_domain::atom::Atom;
 use loom_domain::block::Block;
 use loom_domain::edge::HyperEdge;
-use plexus_core::{AtomId, BlockId, EdgeId};
+use plexus_base::{AtomId, BlockId, EdgeId};
 
 use crate::error::PersistenceError;
 use crate::spaces::{register_spaces, SPACE_ATOMS, SPACE_BLOCKS, SPACE_EDGES};
