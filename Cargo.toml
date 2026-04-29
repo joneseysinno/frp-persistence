@@ -1,0 +1,19 @@
+[package]
+name = "plexus-persistence"
+version = "0.1.0"
+edition = "2024"
+description = "Durable storage backend for Plexus-Loom using infinite-db."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/plexus-loom/plexus-loom"
+documentation = "https://docs.rs/plexus-persistence"
+keywords = ["graph", "storage", "persistence", "loom", "plexus"]
+categories = ["database-implementations"]
+
+[dependencies]
+plexus-core  = { version = "0.1.0", path = "../plexus-core" }
+loom-core    = { version = "0.1.0", path = "../loom-core" }
+loom-domain  = { version = "0.1.0", path = "../loom-domain" }
+infinite-db  = "0.1.2"
+serde_json   = "1"
+serde        = { workspace = true }
+thiserror    = { workspace = true }
